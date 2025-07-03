@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Crítico (Gratis) -->
+    <title>Contador de Caracteres Online Gratis 2023 | ToolsFree</title>
+    <meta name="description" content="Cuenta caracteres, palabras y espacios al instante. Herramienta 100% gratis sin registros. Ideal para Twitter, WhatsApp y trabajos universitarios.">
+    <meta name="keywords" content="contar caracteres, herramientas gratis, online, palabras, SEO">
+    <link rel="canonical" href="https://tudominio.netlify.app/" />
+    <!-- Favicon gratis -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --dark: #212529;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .ad-banner {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+            border-radius: 5px;
+            min-height: 90px;
+        }
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .result {
+            background: #e9ecef;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: var(--dark);
+            color: white;
+            margin-top: 2rem;
+        }
+        .share-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        .share-buttons a {
+            color: white;
+            background: var(--primary);
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛠️ Contador Palabras y Caracteres</h1>
+        <p>Herramienta online gratuita para simplificar tu vida</p>
+    </header>
+
+    <div class="container">
+        <!-- Banner de Publicidad (Propeller Ads - Sin requisitos) -->
+        <div class="ad-banner">
+            <script type="text/javascript" src="https://cdn.propellerads.com/??client/loader.js"></script>
+            <script type="text/javascript">
+                _paq.push(['create', 'YOUR_PUBLISHER_ID', 'adContainer']);
+            </script>
+        </div>
+
+        <h2>Contador de Caracteres y Palabras</h2>
+        <p>¡Pega tu texto aquí y obtén resultados al instante! Perfecto para:</p>
+        <ul>
+            <li>Controlar límites en <strong>Twitter (280 caracteres).</strong></li>
+            <li>Revisar ensayos universitarios.</li>
+            <li>Conocer longitud de texto, cantidad de palabras y espacios.</li>
+        </ul>
+        <textarea id="textInput" placeholder="Escribe o pega tu texto aquí..."></textarea>
+        <div class="result">
+            <p>📊 <strong>Resultados:</strong></p>
+            <p>Caracteres: <span id="charCount">0</span></p>
+            <p>Palabras: <span id="wordCount">0</span></p>
+            <p>Espacios: <span id="spaceCount">0</span></p>
+        </div>
+
+        <!-- Compartir en redes (Tráfico gratis) -->
+        <div class="share-buttons">
+            <a href="https://twitter.com/share?url=https://tudominio.netlify.app&text=¡Descubre esta herramienta gratis para contar caracteres!" target="_blank">Compartir en Twitter</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tudominio.netlify.app" target="_blank">Compartir en Facebook</a>
+        </div>
+
+        <!-- Segundo Banner (Mayores ingresos) -->
+        <div class="ad-banner">
+            <script type="text/javascript">
+                _paq.push(['displayAd', 'adContainer2']);
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 ToolsFree - Herramientas 100% gratuitas</p>
+    </footer>
+
+    <script>
+        // Herramienta funcional
+        const textInput = document.getElementById('textInput');
+        const charCount = document.getElementById('charCount');
+        const wordCount = document.getElementById('wordCount');
+        const spaceCount = document.getElementById('spaceCount');
+
+        textInput.addEventListener('input', () => {
+            const text = textInput.value;
+            // Contar caracteres
+            charCount.textContent = text.length;
+            // Contar palabras
+            wordCount.textContent = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
+            // Contar espacios
+            spaceCount.textContent = text.split(' ').length - 1;
+        });
+
+        // Registrar visitas (útil para publicidad)
+        if (navigator.sendBeacon) {
+            navigator.sendBeacon('https://api.countapi.xyz/hit/toolsfree.netlify.app/visits');
+        }
+    </script>
+</body>
+</html>
