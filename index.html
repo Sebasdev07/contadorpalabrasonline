@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Contador de Palabras Online",
+        "description": "Herramienta gratuita para contar caracteres y palabras en tiempo real.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO Crítico (Gratis) -->
     <title>Contador de Caracteres Online Gratis 2023 | ToolsFree</title>
-    <meta name="description" content="Cuenta caracteres, palabras y espacios al instante. Herramienta 100% gratis sin registros. Ideal para Twitter, WhatsApp y trabajos universitarios.">
+    <meta name="description"
+        content="Cuenta caracteres, palabras y espacios al instante. Herramienta 100% gratis sin registros. Ideal para Twitter, WhatsApp y trabajos universitarios.">
     <meta name="keywords" content="contar caracteres, herramientas gratis, online, palabras, SEO">
+    <meta name="google-site-verification" content="326f0d9edc2ba700" />
     <link rel="canonical" href="https://tudominio.netlify.app/" />
     <!-- Favicon gratis -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
     <style>
         :root {
             --primary: #4361ee;
             --dark: #212529;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -22,27 +42,21 @@
             padding: 0;
             color: var(--dark);
         }
+
         header {
             background: var(--primary);
             color: white;
             padding: 1rem 0;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 1rem;
         }
-        .ad-banner {
-            background: #f8f9fa;
-            border: 1px solid #ddd;
-            padding: 1rem;
-            margin: 2rem 0;
-            text-align: center;
-            border-radius: 5px;
-            min-height: 90px;
-        }
+
         textarea {
             width: 100%;
             min-height: 150px;
@@ -51,12 +65,14 @@
             border-radius: 4px;
             font-family: inherit;
         }
+
         .result {
             background: #e9ecef;
             padding: 1rem;
             border-radius: 4px;
             margin-top: 1rem;
         }
+
         footer {
             text-align: center;
             padding: 1rem;
@@ -64,11 +80,13 @@
             color: white;
             margin-top: 2rem;
         }
+
         .share-buttons {
             display: flex;
             gap: 10px;
             margin-top: 1rem;
         }
+
         .share-buttons a {
             color: white;
             background: var(--primary);
@@ -78,6 +96,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>🛠️ Contador Palabras y Caracteres</h1>
@@ -85,13 +104,6 @@
     </header>
 
     <div class="container">
-        <!-- Banner de Publicidad (Propeller Ads - Sin requisitos) -->
-        <div class="ad-banner">
-            <script type="text/javascript" src="https://cdn.propellerads.com/??client/loader.js"></script>
-            <script type="text/javascript">
-                _paq.push(['create', 'YOUR_PUBLISHER_ID', 'adContainer']);
-            </script>
-        </div>
 
         <h2>Contador de Caracteres y Palabras</h2>
         <p>¡Pega tu texto aquí y obtén resultados al instante! Perfecto para:</p>
@@ -100,7 +112,7 @@
             <li>Revisar ensayos universitarios.</li>
             <li>Conocer longitud de texto, cantidad de palabras y espacios.</li>
         </ul>
-        <textarea id="textInput" placeholder="Escribe o pega tu texto aquí..."></textarea>
+        <textarea id="textInput" onclick="loadPropellerAd()" placeholder="Escribe aquí..."></textarea>
         <div class="result">
             <p>📊 <strong>Resultados:</strong></p>
             <p>Caracteres: <span id="charCount">0</span></p>
@@ -110,20 +122,29 @@
 
         <!-- Compartir en redes (Tráfico gratis) -->
         <div class="share-buttons">
-            <a href="https://twitter.com/share?url=https://tudominio.netlify.app&text=¡Descubre esta herramienta gratis para contar caracteres!" target="_blank">Compartir en Twitter</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tudominio.netlify.app" target="_blank">Compartir en Facebook</a>
-        </div>
-
-        <!-- Segundo Banner (Mayores ingresos) -->
-        <div class="ad-banner">
-            <script type="text/javascript">
-                _paq.push(['displayAd', 'adContainer2']);
-            </script>
+            <a href="https://twitter.com/share?url=https://tudominio.netlify.app&text=¡Descubre esta herramienta gratis para contar caracteres!"
+                target="_blank">Compartir en Twitter</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tudominio.netlify.app"
+                target="_blank">Compartir en Facebook</a>
         </div>
     </div>
 
     <footer>
-        <p>© 2023 ToolsFree - Herramientas 100% gratuitas</p>
+        <div id="propeller-fallback">
+            <p>© 2023 ToolsFree -
+                <a href="/politica-privacidad.html" style="color: #4361ee;">Política de Privacidad</a>
+            </p>
+        </div>
+        <script>
+            if (typeof window._pwjluhkl === 'function') {
+                // Solo carga si hay adblock detectado
+                const fallback = document.getElementById('propeller-fallback');
+                const script = document.createElement('script');
+                script.src = "//go.propellerads.com/9523853.js";
+                script.onload = () => fallback.remove();
+                document.body.appendChild(script);
+            }
+        </script>
     </footer>
 
     <script>
@@ -147,6 +168,29 @@
         if (navigator.sendBeacon) {
             navigator.sendBeacon('https://api.countapi.xyz/hit/toolsfree.netlify.app/visits');
         }
+
+        document.addEventListener('propellerAdLoaded', () => {
+            if (window._paq) {
+                _paq.push(['trackEvent', 'Ads', 'Impression']);
+            }
+
+        });
+
+        function loadPropellerAd() {
+            if (!window.propellerAdLoaded) {
+                window.propellerAdLoaded = true;
+                const script = document.createElement('script');
+                script.src = "//go.propellerads.com/9523852.js?ver=" + Date.now();
+                script.async = true;
+                document.body.appendChild(script);
+
+                // Registra el clic para analytics
+                if (navigator.sendBeacon) {
+                    navigator.sendBeacon('https://tuapi.com/track?action=ad_click');
+                }
+            }
+        }
     </script>
 </body>
+
 </html>
